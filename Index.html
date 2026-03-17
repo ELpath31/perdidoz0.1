@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="icon" type="image/png" href="/LogoInvertido.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="LogoInvertido.png" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perdidozy</title>
-    <link rel="stylesheet" href="Estilos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/Estilos.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header class="main-header">
       <div class="logotipo">
-        <img src="/Logotipo.png" alt="Logo Perdidozy" />
+        <img src="Logotipo.png" alt="Logo Perdidozy" />
       </div>
+
       <nav class="main-nav">
         <a href="#inicio">Inicio</a>
         <a href="#musica">Música</a>
         <a href="#tienda">Tienda</a>
         <a href="#contacto">Contacto</a>
       </nav>
+
       <div class="header-actions">
         <a href="#acerca" class="header-button">Acerca de</a>
       </div>
     </header>
 
+    <!-- HERO -->
     <main id="inicio" class="hero-inicio">
-      <img src="/Logo.png" alt="Logo Perdidozy grande" class="hero-logo" />
+      <img src="Logo.png" alt="Logo Perdidozy grande" class="hero-logo" />
     </main>
 
-    <!-- Sección MÚSICA -->
+    <!-- MÚSICA -->
     <section id="musica" class="section musica-section">
       <div class="section-inner musica-layout">
         <div class="musica-cover"></div>
+
         <div class="musica-info">
           <h2>Música</h2>
+
           <p class="musica-tagline">
             Riffs, distorsión y letras perdidas en la noche. Aquí vive el sonido
             de Perdidozy.
@@ -52,24 +63,27 @@
       </div>
     </section>
 
-    <!-- Sección TIENDA -->
+    <!-- TIENDA -->
     <section id="tienda" class="section tienda-section">
       <div class="section-inner tienda-layout">
         <div class="tienda-info">
           <h2>Tienda</h2>
           <p class="tienda-tagline">
-            Accesorios oficiales de perdididoz
+            Accesorios oficiales de Perdidozy
           </p>
         </div>
+
         <div class="tienda-grid">
           <article class="tienda-item">
             <h3>Camiseta oficial</h3>
             <p>Logo frontal, negro clásico.</p>
           </article>
+
           <article class="tienda-item">
             <h3>Gorra Perdidozy</h3>
             <p>Para noches largas y festivales.</p>
           </article>
+
           <article class="tienda-item">
             <h3>Parche para chaqueta</h3>
             <p>Para tu chupa de cuero favorita.</p>
@@ -78,22 +92,21 @@
       </div>
     </section>
 
-    <!-- Sección CONTACTO -->
+    <!-- CONTACTO -->
     <section id="contacto" class="section contacto-section">
       <div class="section-inner contacto-layout">
         <div class="contacto-info">
           <h2>Contacto</h2>
-          <p class="contacto-tagline">
-          </p>
+
           <p>
             Escríbenos a
             <strong>perd.idoz@gmail.com</strong>
-            
           </p>
         </div>
       </div>
     </section>
 
+    <!-- AUDIO -->
     <audio
       id="bg-music"
       src="/MusicaDeFondo/AGUA SUCIA - DEMO.mp3"
@@ -101,6 +114,7 @@
       loop
     ></audio>
 
-    <script src="Lenguaje.js"></script>
+    <!-- JS -->
+    <script src="Assets/Lenguaje.js"></script>
   </body>
 </html>
