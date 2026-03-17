@@ -1,0 +1,236 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Sección principal con logo centrado */
+.hero-inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px; /* altura del header fijo */
+}
+
+.hero-logo {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Secciones inferiores (Música, Tienda, Contacto) */
+.section {
+    padding: 80px 40px;
+}
+
+.section-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* MÚSICA */
+.musica-section {
+    background-color: #050505;
+}
+
+.musica-layout {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.musica-cover {
+    width: 260px;
+    height: 260px;
+    border-radius: 4px;
+    background-image: url("/Alb.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.musica-info h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.musica-tagline {
+    margin-bottom: 16px;
+    color: #cccccc;
+}
+
+.musica-highlight h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 4px;
+}
+
+.musica-track {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.musica-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pill {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #f5c143;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 11px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pill-spotify { border-color: #1db954; }
+.pill-youtube { border-color: #ff0000; }
+.pill-instagram { border-color: #e1306c; }
+
+.pill:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* TIENDA */
+.tienda-section {
+    background-color: #080808;
+}
+
+.tienda-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tienda-info h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+}
+
+.tienda-tagline {
+    color: #cccccc;
+}
+
+.tienda-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.tienda-item {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.tienda-item h3 {
+    margin-bottom: 4px;
+}
+
+/* CONTACTO */
+.contacto-section {
+    background-color: #050505;
+}
+
+.contacto-info h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+}
+
+.contacto-tagline {
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+/* Header principal tipo banda rock */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 10;
+}
+
+/* Logo */
+.logotipo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* Menú central */
+.main-nav {
+    display: flex;
+    gap: 24px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #840d0d;
+}
+
+/* Acceso / Unirse a la derecha */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.header-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-button {
+    padding: 6px 12px;
+    border-radius: 3px;
+    background-color: #f5c143;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-button:hover {
+    background-color: #ffd45c;
+}
